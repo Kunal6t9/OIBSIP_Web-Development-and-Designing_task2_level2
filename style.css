@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+}
+
+.img-box {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.text-box {
+  flex: 1 1 400px;
+}
+
+.text-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text-box p,
+.text-box ul {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.text-box ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.text-box li {
+  margin-bottom: 10px;
+}
+
+.header {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  flex-direction: column;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.about {
+  background: linear-gradient(135deg, #00c9ff, #92fe9d);
+}
+
+.achievements {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+}
+
+.quotes {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  text-align: center;
+}
+
+.quotes-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 800px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.quotes-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.quotes-container blockquote {
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.quotes-container blockquote::before {
+  content: "❝";
+  font-size: 2rem;
+  position: absolute;
+  left: -25px;
+  top: 0;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: white;
+}
